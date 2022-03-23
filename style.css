@@ -12,6 +12,7 @@ body {
     #d70fe0 48.23%,
     #ffd772 90.94%
   );
+  overflow-x: hidden;
 }
 ul,
 li {
@@ -46,7 +47,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-top: 8rem;
 }
 .mobile-nav .links ul li {
@@ -206,7 +206,6 @@ nav {
   border: 2px solid #685526;
 }
 
-
 /* Gallery */
 .showcase {
   display: flex;
@@ -329,4 +328,45 @@ nav {
 }
 .dark-mode {
   cursor: pointer;
+}
+.light-mode {
+  cursor: pointer;
+}
+.loading-page {
+  background-color: #163945;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+.loading-page .counter {
+  text-align: center;
+}
+
+.loading-page .counter h1 {
+  color: white;
+  font-size: 5rem;
+  margin-top: -10px;
+  letter-spacing: 10px;
+}
+
+.loading-page .counter {
+  position: relative;
+  width: 200px;
+}
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
 }
