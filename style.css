@@ -205,11 +205,7 @@ nav {
   width: 284px;
   border: 2px solid #685526;
 }
-@media (max-width: 410px) {
-  .bg {
-    height: 210vh;
-  }
-}
+
 
 /* Gallery */
 .showcase {
